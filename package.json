@@ -4,7 +4,7 @@
   "description": "A Discord bot for shortening Codewars trainer links to the corresponding Kata description link",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
