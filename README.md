@@ -8,13 +8,7 @@ Codewars Trainer Link Bot for Discord
 
 1. Download the RPM package to your local system: `$ wget https://github.com/DonaldKellett/cwtlbot-discord/releases/download/v0.1.0/cwtlbot-discord-0.1.0-1.fc34.noarch.rpm`
 1. Install from the local RPM: `$ sudo dnf install /path/to/your/cwtlbot-discord-0.1.0-1.fc34.noarch.rpm`
-1. Run the initialization script as root:
-   
-   ```bash
-   $ sudo su -
-   # cwtlbot-discord --init
-   # exit
-   ```   
+1. Run the initialization script as root: `$ sudo cwtlbot-discord --init`
 1. Start the `cwtlbot-discord` service as root and enable it to autostart at boot: `$ sudo systemctl enable --now cwtlbot-discord.service`
 1. Profit :-)
 
