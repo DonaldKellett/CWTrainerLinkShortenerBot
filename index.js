@@ -48,7 +48,7 @@ ${trainerLinks.map(trainerLink => '- ' + trainerLink.replace(/\/train\/[a-z]+$/,
 
 ----
 
-I am a bot, and this message was generated automatically. You can find my source code on GitHub: https://github.com/DonaldKellett/CWTrainerLinkShortenerBot`)
+I am a bot, and this message was generated automatically. You can find my source code on GitHub: https://github.com/DonaldKellett/cwtlbot-discord`)
   }
 })
 

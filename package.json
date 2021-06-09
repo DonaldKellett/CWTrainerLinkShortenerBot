@@ -1,21 +1,21 @@
 {
-  "name": "cwtrainerlinkshortenerbot",
+  "name": "cwtlbot-discord",
   "version": "0.1.0",
-  "description": "A Discord bot for shortening Codewars trainer links to the corresponding Kata description link",
+  "description": "Codewars Trainer Link Bot for Discord",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DonaldKellett/CWTrainerLinkShortenerBot.git"
+    "url": "git+https://github.com/DonaldKellett/cwtlbot-discord.git"
   },
   "author": "Donald Sebastian Leung",
   "license": "AGPL-3.0+",
   "bugs": {
-    "url": "https://github.com/DonaldKellett/CWTrainerLinkShortenerBot/issues"
+    "url": "https://github.com/DonaldKellett/cwtlbot-discord/issues"
   },
-  "homepage": "https://github.com/DonaldKellett/CWTrainerLinkShortenerBot#readme",
+  "homepage": "https://github.com/DonaldKellett/cwtlbot-discord#readme",
   "dependencies": {
     "discord.js": "^12.5.3"
   }
