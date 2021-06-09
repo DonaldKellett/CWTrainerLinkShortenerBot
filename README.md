@@ -12,6 +12,15 @@ Codewars Trainer Link Bot for Discord
 1. Start the `cwtlbot-discord` service as root and enable it to autostart at boot: `$ sudo systemctl enable --now cwtlbot-discord.service`
 1. Profit :-)
 
+### Using the provided deb (Ubuntu 21.04 and similar systems)
+
+Follow the same steps as in installing from the RPM, but change the download link and installation command accordingly (steps 1-2):
+
+```bash
+$ wget https://github.com/DonaldKellett/cwtlbot-discord/releases/download/v0.1.0/cwtlbot-discord_0.1.0_all.deb
+$ sudo apt install /path/to/your/cwtlbot-discord_0.1.0_all.deb
+```
+
 ### From source
 
 Ensure Node.js v12.x.x+ and `npm` are installed on your system.
