@@ -35,9 +35,7 @@ cat > %{appname}.sh << EOF
 if [[ \$# -gt 1 ]]; then
   echo "On first usage:"
   echo ""
-  echo "\$ sudo su -"
-  echo "# %{appname} --init"
-  echo "# exit"
+  echo "\$ sudo %{appname} --init"
   echo ""
   echo "Thereafter:"
   echo "- \$ sudo %{appname}"
@@ -78,9 +76,7 @@ fi
 
 echo "On first usage:"
 echo ""
-echo "\$ sudo su -"
-echo "# %{appname} --init"
-echo "# exit"
+echo "\$ sudo %{appname} --init"
 echo ""
 echo "Thereafter:"
 echo "- \$ sudo %{appname}"
