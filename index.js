@@ -44,11 +44,11 @@ client.on('message', msg => {
     if (trainerLinks !== null && trainerLinks.length > 0)
       msg.reply(`Please refrain from posting links to the trainer (i.e. those ending with \`/train/<language-id>\`) as fellow Codewarriors may accidentally click on it and end up with an unwanted Kata on their "Unfinished" list. Instead, consider posting direct links to the Kata, by removing the trailing \`/train/<language-id>\` component, as follows:
 
-${trainerLinks.map(trainerLink => '- ' + trainerLink.replace(/\/train\/[a-z]+$/, '')).join`\n`}
+${trainerLinks.map(trainerLink => '- <' + trainerLink.replace(/\/train\/[a-z]+$/, '') + '>').join`\n`}
 
 ----
 
-I am a bot, and this message was generated automatically. You can find my source code on GitHub: https://github.com/DonaldKellett/cwtlbot-discord`)
+I am a bot, and this message was generated automatically. You can find my source code on GitHub: <https://github.com/DonaldKellett/cwtlbot-discord>`)
   }
 })
 

@@ -1,5 +1,5 @@
 %global appname cwtlbot-discord
-%global version 0.1.0
+%global version 0.1.1
 
 Name: %{appname}
 Version: %{version}
@@ -116,5 +116,7 @@ cp %{appname}.service %{buildroot}/usr/lib/systemd/system/%{appname}.service
 /usr/lib/systemd/system/%{appname}.service
 
 %changelog
+* Thu Jun 10 2021 Donald Sebastian Leung <donaldsebleung@gmail.com> - 0.1.1-1
+- Reduce verbosity of bot by disabling link preview
 * Wed Jun 9 2021 Donald Sebastian Leung <donaldsebleung@gmail.com> - 0.1.0-1
 - Initial app release
