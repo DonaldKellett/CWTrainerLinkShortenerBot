@@ -1,0 +1,40 @@
+name: cwtlbot-discord
+base: core20
+version: '0.1.1'
+summary: Codewars Trainer Link Bot for Discord
+description: |
+  A Discord bot for detecting links to the Codewars trainer and converting them
+  to direct Kata links.
+  
+  https://github.com/DonaldKellett/cwtlbot-discord
+grade: stable
+confinement: strict
+apps:
+  cwtlbot-discord:
+    command: bin/cwtlbot-discord.snap.sh
+    plugs:
+      - network
+  cwtlbot-discordd:
+    command: bin/cwtlbot-discord.snap.sh
+    daemon: simple
+    install-mode: disable
+    plugs:
+      - network
+parts:
+  entry:
+    plugin: dump
+    source: .
+    source-type: local
+    organize:
+      cwtlbot-discord.snap.sh: bin/
+  cwtlbot-discord:
+    plugin: npm
+    npm-node-version: '14.17.0'
+    source: https://github.com/DonaldKellett/cwtlbot-discord/archive/refs/tags/v0.1.1.tar.gz
+  whoami:
+    plugin: nil
+    stage-packages:
+      - coreutils
+    stage:
+      - usr/bin/whoami
+
