@@ -28,6 +28,33 @@ $ wget https://github.com/DonaldKellett/cwtlbot-discord/releases/download/v0.1.1
 $ sudo apt install /path/to/your/cwtlbot-discord_0.1.1_all.deb
 ```
 
+### Using the provided Docker image (Windows, macOS, Linux)
+
+Ensure that Docker is installed on your system and run the following commands as superuser if necessary.
+
+1. Pull the image from Docker Hub: `$ docker image pull donaldsebleung/cwtlbot-discord:0.1.1`
+1. Assuming the login token for your bot is `YOUR_BOT_LOGIN_TOKEN` and its username is `YOUR_BOT_USERNAME`, create and run a Docker container using the following command:
+   
+   ```bash
+   $ docker container run -d \
+       --name my-discord-bot \
+       --env LOGIN_TOKEN=YOUR_BOT_LOGIN_TOKEN \
+       --env USERNAME=YOUR_BOT_USERNAME \
+       --restart always \
+       donaldsebleung/cwtlbot-discord:0.1.1
+   ```
+   
+   A breakdown of the command line options used:
+   
+   - `-d`: Run the container in background
+   - `--name my-discord-bot`: Name our container `my-discord-bot`
+   - `--env LOGIN_TOKEN=YOUR_BOT_LOGIN_TOKEN`: Set the login token to `YOUR_BOT_LOGIN_TOKEN`
+   - `--env USERNAME=YOUR_BOT_USERNAME`: Set the username to `YOUR_BOT_USERNAME`
+   - `--restart always`: Have the container autostart on boot, as long as the Docker engine is running
+1. Profit :-)
+
+Once you're done with the container: `$ docker container stop my-discord-bot && docker container rm my-discord-bot`
+
 ### From source
 
 Ensure Node.js v12.x.x+ and `npm` are installed on your system.
