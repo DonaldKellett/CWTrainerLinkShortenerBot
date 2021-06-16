@@ -6,5 +6,5 @@ RUN tar xvf v${VERSION}.tar.gz && rm v${VERSION}.tar.gz
 RUN mv ${APPNAME}-${VERSION} app
 WORKDIR /app
 RUN npm install
-COPY cwtlbot-discord.docker.sh /app/run.sh
+COPY ${APPNAME}.docker.sh /app/run.sh
 CMD ["/app/run.sh"]
