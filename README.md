@@ -2,6 +2,8 @@
 
 Codewars Trainer Link Bot for Discord
 
+_17/06/2021: There are now concrete plans for an official Codewars Discord bot so I've decided that this project will no longer be accepting contributions. Nevertheless, the source code and existing packages will remain available - feel free to use them as a reference, or feel free to fork this project and develop your own bot in compliance to the AGPL 3.0 (or any later version at your discretion) license._
+
 ## Installing
 
 ### Using the provided snap (Ubuntu 20.04 and other supported systems)
